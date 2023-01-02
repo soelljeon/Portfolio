@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- 공통 -->
+    <link rel="stylesheet" href="./css/cursor.css" />
+
+    <link rel="stylesheet" href="./css/contact.css" />
+
+    <!-- 공통 -->
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+    <script src="./js/cursor.js" defer></script>
+  </head>
+
+  <body>
+    <div class="cursor"></div>
+    <div class="gnb">
+      <a class="logo" href="index.html">
+        <div class="list_a">
+          a
+          <p>!</p>
+        </div>
+        <div class="list_atti">
+          <span style="--i: 1">a</span>
+          <span style="--i: 2">f</span>
+          <span style="--i: 3">f</span>
+          <span style="--i: 4">i</span>
+          <span style="--i: 5">r</span>
+          <span style="--i: 6">m</span>
+          <span style="--i: 7">a</span>
+          <span style="--i: 8">t</span>
+          <span style="--i: 9">i</span>
+          <span style="--i: 10">v</span>
+          <span style="--i: 11">e</span>
+          <span style="--i: 12" class="bar">a</span>
+          <span style="--i: 13">t</span>
+          <span style="--i: 14">t</span>
+          <span style="--i: 15">i</span>
+          <span style="--i: 16">t</span>
+          <span style="--i: 17">u</span>
+          <span style="--i: 18">d</span>
+          <span style="--i: 19">e</span>
+          <span style="--i: 20">!</span>
+        </div>
+      </a>
+      <a class="aobut_btn" href="about.html">about</a>
+    </div>
+
+    <!-- contact -->
+    <div class="email_con">
+      <div class="left_con">
+        <p>
+          If you want to talk about a project.<br />
+          Send me an email.
+        </p>
+        <p>Kakao QR</p>
+        <img src="./img/Kakao_QR.jpg" alt="" />
+      </div>
+
+      <form action="/addresscheck.html" method="post" class="email_box">
+        <div class="top">
+          <div class="field-wrap">
+            <label for="name"><span class="req">*</span>Name</label>
+            <input class="name" type="text" placeholder=" Your Name" />
+          </div>
+          <div class="field-wrap">
+            <label for="email"><span class="req">*</span>Email</label>
+            <input class="email" type="text" placeholder=" Your Email" />
+          </div>
+        </div>
+        <div class="field-wrap">
+          <label for="phone"><span class="req">*</span>Phone Number</label>
+          <input class="phone" type="text" placeholder=" Your Phone number" />
+        </div>
+
+        <div class="field-wrap">
+          <label for="message">Message</label>
+          <input class="message" type="text" placeholder=" " />
+        </div>
+      </form>
+      <button
+        class="send_btn"
+        type="button"
+        onclick="location.href = 'M_index.html' "
+      >
+        SEND EMAIL
+      </button>
+    </div>
+    <div class="back_list">
+      <a href="M_index.html">
+        <img src="./img/arrow.png" alt="" />
+      </a>
+      <span>Portfolio List</span>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,202 @@
+@charset 'utf-8';
+@import url(my_reset.css);
+
+body {
+  background-color: #181b30;
+}
+.wrap {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* start */
+.gnb {
+  position: fixed;
+  top: 10%;
+  left: 5%;
+  z-index: 99999;
+}
+.gnb .logo > div {
+  position: absolute;
+  top: 0;
+  z-index: 9999;
+}
+.gnb .aobut_btn {
+  color: #ff1577;
+  font-weight: bold;
+  position: absolute;
+  top: 50px;
+  transition: 0.3s;
+}
+.gnb .aobut_btn:hover {
+  border-bottom: 1px solid #dbff00;
+  color: #dbff00;
+}
+.gnb div {
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: white;
+  display: flex;
+  padding-bottom: 0.5rem;
+}
+.gnb .list_atti {
+  opacity: 0;
+  transition: 0.5s;
+}
+.gnb .logo:hover .list_a {
+  opacity: 0;
+}
+.gnb .logo:hover .list_atti {
+  opacity: 1;
+}
+.gnb .list_a:hover .list_atti {
+  display: block;
+}
+.gnb .list_atti {
+  position: relative;
+}
+.list_atti span {
+  position: relative;
+  display: inline-block;
+  color: white;
+  animation: waviy 1.8s infinite linear;
+  animation-delay: calc(0.1s * var(--i));
+}
+@keyframes waviy {
+  0%,
+  40%,
+  100% {
+    transform: translateY(0);
+  }
+  10% {
+    transform: translateY(-10px);
+  }
+}
+.list_atti .bar {
+  padding-left: 10px;
+}
+.gnb div p {
+  position: absolute;
+  top: 5px;
+  left: 2rem;
+  transform: rotate(90deg);
+}
+
+/* contact */
+.email_con {
+  display: flex;
+  margin: auto;
+  padding: 10rem 2rem;
+  position: relative;
+}
+.left_con {
+  width: 50%;
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding: 5rem 0.5rem;
+  text-align: center;
+  white-space: nowrap;
+  color: white;
+}
+.left_con p:first-child {
+  padding-bottom: 2.25rem;
+}
+.left_con p:nth-child(2) {
+  padding: 2rem 1rem;
+  font-size: 1rem;
+}
+.left_con img {
+  width: 10%;
+}
+.email_box {
+  align-items: center;
+  width: 50%;
+}
+.field-wrap input {
+  border: none;
+  border-bottom: 1px solid lightgray;
+}
+.field-wrap input:focus {
+  outline: none;
+}
+.field-wrap {
+  font-size: 1.25rem;
+  padding: 2rem;
+  color: white;
+}
+.field-wrap .req {
+  color: #dbff00;
+}
+.email_box .top {
+  display: flex;
+  justify-content: space-between;
+}
+.email_box .top .field-wrap:first-child {
+  width: 50%;
+}
+.email_box .top .field-wrap:first-child .name {
+  width: 100%;
+  height: 1.85vw;
+}
+.email_box .top .field-wrap:last-child {
+  width: 100%;
+}
+.email_box .top .field-wrap:last-child .email {
+  width: 100%;
+  height: 1.85vw;
+}
+.email_box .field-wrap:nth-child(2) .phone {
+  width: 100%;
+  height: 1.85vw;
+}
+.email_box .field-wrap:nth-child(3) .message {
+  width: 100%;
+  height: 2vw;
+}
+.send_btn {
+  width: 12%;
+  height: 8%;
+  border: none;
+  border-radius: 50px;
+  background-color: #dbff00;
+  color: #181b30;
+  font-weight: bold;
+  cursor: pointer;
+  position: absolute;
+  bottom: 10%;
+  right: 20%;
+}
+
+/* back */
+.back_list {
+  padding: 2.5rem 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  width: 25%;
+}
+.back_list img {
+  width: 50%;
+  padding-left: 25%;
+  transition: 0.5s;
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(253deg)
+    brightness(105%) contrast(101%);
+}
+.back_list span {
+  color: white;
+  font-size: 1.2rem;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+.back_list:hover span {
+  color: #ff1577;
+}
+.back_list:hover img,
+.back_list:hover span {
+  transform: scale(1.15);
+}

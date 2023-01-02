@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Purpledog</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- 공통 -->
+    <link rel="stylesheet" href="./css/cursor.css" />
+
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/pro02.css" />
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- 공통 -->
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+    <script src="./js/cursor.js" defer></script>
+  </head>
+
+  <body>
+    <div class="cursor"></div>
+    <div class="wrap">
+      <div class="gnb">
+        <a class="logo" href="index.html">
+          <div class="list_a">
+            a
+            <p>!</p>
+          </div>
+          <div class="list_atti">
+            <span style="--i: 1">a</span>
+            <span style="--i: 2">f</span>
+            <span style="--i: 3">f</span>
+            <span style="--i: 4">i</span>
+            <span style="--i: 5">r</span>
+            <span style="--i: 6">m</span>
+            <span style="--i: 7">a</span>
+            <span style="--i: 8">t</span>
+            <span style="--i: 9">i</span>
+            <span style="--i: 10">v</span>
+            <span style="--i: 11">e</span>
+            <span style="--i: 12" class="bar">a</span>
+            <span style="--i: 13">t</span>
+            <span style="--i: 14">t</span>
+            <span style="--i: 15">i</span>
+            <span style="--i: 16">t</span>
+            <span style="--i: 17">u</span>
+            <span style="--i: 18">d</span>
+            <span style="--i: 19">e</span>
+            <span style="--i: 20">!</span>
+          </div>
+        </a>
+        <a class="aobut_btn" href="about.html">about</a>
+        <a
+          class="link"
+          href="https://soelljeon.github.io/Purpledog/"
+          target="_blank"
+          ><i class="fa-solid fa-link"></i
+        ></a>
+      </div>
+
+      <!-- nav -->
+      <nav class="list_btn">
+        <ul class="list05">
+          <li class="active"><a href="#sec1">리뉴얼 전략</a></li>
+          <li><a href="#sec2">메인 페이지</a></li>
+          <li><a href="#sec3">와이어 프레임</a></li>
+          <li><a href="#sec4">기획서</a></li>
+        </ul>
+      </nav>
+
+      <!-- section 1 -->
+      <section id="sec1" class="sect1">
+        <div class="sect1_con">
+          <div class="txt_con">
+            <h1>Wine Service Web</h1>
+            <p>‘퍼플독’ 웹 리뉴얼 프로젝트</p>
+            <p>
+              퍼플(purple)은 고귀함, 독(dog)은 집사라는 뜻으로<br />
+              고귀한 고객을 위해 와인을 정성껏 추천해 전한다는 의미를 뜻하며
+              <br />
+              사용자에게 다양한 와인 컨텐츠와 관련된 정보를 제공하는 맞춤형 와인
+              구독 서비스입니다.
+            </p>
+          </div>
+          <!-- btn -->
+          <button
+            class="demo_btn"
+            type="button"
+            onclick="window.open('https://soelljeon.github.io/Purpledog/') "
+          >
+            Demo
+          </button>
+          <button
+            class="git_btn"
+            type="button"
+            onclick="window.open('https://github.com/soelljeon/Purpledog')"
+          >
+            Git Hub
+          </button>
+        </div>
+      </section>
+
+      <!-- section 2 -->
+      <section id="sec2" class="sect2">
+        <h1 hidden>Web Problems</h1>
+        <div class="main_page">
+          <div class="page_img">
+            <img src="./img/purple_page2.jpg" alt="" />
+            <div class="page_txt">
+              <h2>Web Problems</h2>
+              <p>사용자의 접근성 및 가독성</p>
+              <p>
+                메인 페이지와 서브 페이지의 UI가 통일 되지 않아 이질감을 형성
+              </p>
+              <p>브라우저 사이즈라이징 오버랩이 발생</p>
+              <p>구독서비스에 대한 정보 부족</p>
+              <p>플로팅 탑메뉴 부재</p>
+            </div>
+          </div>
+          <img class="back_page" src="./img/Purpledog_BG02.png" alt="" />
+        </div>
+
+        <!-- concept -->
+        <div class="concept">
+          <div class="concept_dec">
+            <h2>Design Concept</h2>
+            <p>취향, 분위기, 관계 (Taste, Atmosphere, Relationship)</p>
+            <p>
+              사용자의 라이프스타일을 정의하고, 어떤 대상이 구매할 것인지에 대한
+              리서치를 진행 후 <br />
+              브랜드 컨셉트와 일치하는 키워드를 도출하여 시각화하였습니다.
+            </p>
+          </div>
+          <img class="arrow" src="./img/arrow.png" alt="arrow" />
+          <div class="goal_dec">
+            <h2>Project Goal</h2>
+            <p>
+              ‘Purpledog’ 브랜드가 추구하는 솔직한 모습과 제품의 다양성을
+              <br />
+              전달할 수 있는 UI요소를 구현함을 목표로 합니다.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- section 3  -->
+      <section id="sec3" class="sect3">
+        <h1>Wire Frame</h1>
+        <div class="wire_frame">
+          <div class="main_p">
+            <p>Main Page</p>
+            <img src="./img/purple_index_Wire.jpg" alt="" />
+          </div>
+          <div class="sub_p">
+            <p>Sub Page</p>
+            <img src="./img/purple_sub_Wire.jpg" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <!-- section 4 -->
+      <section id="sec4" class="sect4">
+        <div class="color">
+          <h1>color</h1>
+          <div class="color_chip">
+            <div class="color_img">
+              <img src="./img/purpledog_color01.jpg" alt="" />
+              <img src="./img/purpledog_color02.jpg" alt="" />
+              <img src="./img/purpledog_color03.jpg" alt="" />
+              <img src="./img/purpledog_color04.jpg" alt="" />
+              <p class="color_txt">
+                <span>#45156E</span>
+                <span>#F9F7F7</span>
+                <span>#72677B</span>
+                <span>#BEB5B5</span>
+              </p>
+            </div>
+            <img
+              class="right_img"
+              src="./img/Purpledog_color_right.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <!-- typography -->
+        <div class="typography">
+          <h1>Typography</h1>
+          <div class="text_list02">
+            <div class="font">
+              <p>Inter</p>
+              <p>Regular / Medium</p>
+            </div>
+            <div class="f_dec" data-id="tab2">
+              <div class="f_hd">
+                <dl class="headline">
+                  <dt>Headlines</dt>
+                  <dd>H1: Inter, 26px</dd>
+                  <dd>H1: Inter, 16px</dd>
+                  <dd>H1: Inter, 13px</dd>
+                </dl>
+                <dl class="bodyline">
+                  <dt>Body text</dt>
+                  <dd>H1: Inter, 26px</dd>
+                  <dd>H1: Inter, 20px</dd>
+                  <dd>H1: Inter, 16px</dd>
+                  <dd>H1: Inter, 15px</dd>
+                </dl>
+              </div>
+              <div class="f_style">
+                <p>
+                  ABCDEFGHIJKLMNOP<br />
+                  abcdefghijklmnop
+                </p>
+                <p>
+                  ABCDEFGHIJKLMNOP <br />
+                  abcdefghijklmnop
+                </p>
+                <p>
+                  0123456789<br />
+                  ~!@#$%^&*()_;:/?
+                </p>
+              </div>
+            </div>
+            <div
+              class="f_big"
+              data-aos="fade-left"
+              data-aos-offset="540"
+              data-aos-easing="ease-in-sine"
+            >
+              <p>Aa</p>
+              <p>Aa</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- component  -->
+        <div class="component">
+          <h1>Component</h1>
+          <div class="com_img">
+            <img src="./img/p_com01.png" alt="" />
+            <img src="./img/p_com02.png" alt="" />
+            <img src="./img/p_com04.png" alt="" />
+            <img src="./img/p_com03.png" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <!-- back -->
+      <div class="end_con">
+        <h1>Thank you for your time</h1>
+        <div class="img_con">
+          <a href="project03.html">
+            <img class="arrow" src="./img/arrow.png" alt="arrow" />
+            <img src="./img/Topresso_03.jpg" alt="" />
+          </a>
+          <span
+            >Next <br />
+            Project</span
+          >
+          <p>TOPRESSO</p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

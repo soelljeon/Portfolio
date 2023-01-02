@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AboutMe</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- 공통 -->
+    <link rel="stylesheet" href="./css/cursor.css" />
+    <link rel="stylesheet" href="./css/about.css" />
+
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="./js/about.js" defer></script>
+
+    <!-- 공통 -->
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+    <script src="./js/cursor.js" defer></script>
+  </head>
+
+  <body>
+    <div class="cursor"></div>
+    <div class="wrap">
+      <div class="gnb">
+        <a class="logo" href="index.html">
+          <div class="list_a">
+            a
+            <p>!</p>
+          </div>
+          <div class="list_atti">
+            <span style="--i: 1">a</span>
+            <span style="--i: 2">f</span>
+            <span style="--i: 3">f</span>
+            <span style="--i: 4">i</span>
+            <span style="--i: 5">r</span>
+            <span style="--i: 6">m</span>
+            <span style="--i: 7">a</span>
+            <span style="--i: 8">t</span>
+            <span style="--i: 9">i</span>
+            <span style="--i: 10">v</span>
+            <span style="--i: 11">e</span>
+            <span style="--i: 12" class="bar">a</span>
+            <span style="--i: 13">t</span>
+            <span style="--i: 14">t</span>
+            <span style="--i: 15">i</span>
+            <span style="--i: 16">t</span>
+            <span style="--i: 17">u</span>
+            <span style="--i: 18">d</span>
+            <span style="--i: 19">e</span>
+            <span style="--i: 20">!</span>
+          </div>
+        </a>
+        <a class="aobut_btn" href="about.html">about</a>
+      </div>
+
+      <!-- section 1 -->
+      <section class="sec_main">
+        <h1 hidden>about me</h1>
+        <div class="mouse"></div>
+        <div class="sec_bg" data-aos="fade-up" data-aos-duration="3000">
+          <p class="first"><span>G</span>RIT</p>
+          <p class="secon">& <span>P</span>OSITIVE</p>
+          <p class="last">TO <span>Q</span>UALITY</p>
+        </div>
+        <div class="txt_con">
+          <h2>soell design</h2>
+          <div class="txt_inner">
+            <p class="hd_text">
+              긍정은 우리를 꿈꾸게 하는 이상을 만날 수 있도록 한다.
+            </p>
+            <p class="sub_text">
+              Positivity allows us to meet the ideals that make us dream.
+            </p>
+            <p class="dec_text">
+              I like to look at pictures. Like a complete tool on the screen.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- section 2 -->
+    <section class="sec_about">
+      <h1 hidden>about dec</h1>
+      <div class="con">
+        <div class="img_list">
+          <img src="./img/About_01.jpg" alt="" />
+          <img src="./img/About_02.jpg" alt="" />
+          <img src="./img/About_03.jpg" alt="" />
+        </div>
+        <div class="about_dec">
+          <div class="dec01">
+            <h2>About Me</h2>
+            <p>Name.</p>
+            <span>전 소리(Jeon Sori)</span>
+            <p>Age.</p>
+            <span>26</span>
+            <p>History.</p>
+            <span>2016~</span>
+            <p>Certificate.</p>
+            <span>웹디자인기능사</span>
+          </div>
+          <div class="dec02">
+            <h2>Remind</h2>
+            <p>
+              긍정적인 태도를 갖추며 현재의 상태에 만족하기 보다 <br />
+              현실에서 부딪히는 다양한 문제들을 해결하며 더 나은 상태를
+              추구합니다.
+            </p>
+          </div>
+          <div class="dec03">
+            <h2>skill</h2>
+            <p>WEB DESIGN 웹디자인 Figma + Photoshop + Illustrator</p>
+            <p>
+              웹사이트 및 컨텐츠 성격에 부합하는 디자인 컨셉트를 정의하고 정보
+              접근성과 <br />사용성 및 가독성 고려해 콘텐츠를 구성합니다.
+            </p>
+            <p>MARKUP ENGINEERING HTML5 + SCSS + JQuery +JavaScript</p>
+            <p>
+              대학교, 공공기관 등의 홈페이지 제작 경험을 바탕으로 웹표준 및 웹
+              접근성을 준수해 마크업합니다.<br />
+              웹 아이덴티티 표출을 위한 비주얼, UI, 컬러을 통해 구현 가능합니다.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="back_list">
+        <a href="index.html">
+          <img src="./img/arrow.png" alt="" />
+        </a>
+        <span>Portfolio List</span>
+      </div>
+    </section>
+
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
